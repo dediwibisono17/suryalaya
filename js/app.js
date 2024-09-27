@@ -1,9 +1,16 @@
+$('.sliderx').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+
 $('.slider-news').slick({
     dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    infinite: true,
     responsive: [
         {
             breakpoint: 1024,

@@ -5,6 +5,8 @@
         height: 100%;
         width: 100%;
         .datax {
+            height: 100vh;
+            position: relative;
             @media screen and (max-width: 768px) {
                 height: 100vh;
             }
@@ -31,15 +33,15 @@
             &__desc {
                 position: absolute;
                 left: 50%;
-                top: 70%;
+                top: 40%;
                 transform: translate(-50%, -50%);
                 // width: 800px;
                 width: 1140px;
                 // border: 1px solid white;
                 height: auto;
                 @media screen and (max-width: 768px) {
-                    width: 90%;
-                    // top: 40%;
+                    width: 85%;
+                    top: 60%;
                 }
                 img {
                     width: 100%;
@@ -87,24 +89,31 @@
         left: 50%;
         // top: 100%;
         width: 100%;
-        bottom: -50%;
+        bottom: -20%;
         transform: translate(-50%, 0);
         @media screen and (max-width: 768px) {
-            bottom: 0;
-            display: none;
+            margin-top: -40%;
+            position: relative;
+            // display: none;
         }
         .rectanglex {
             width: 33%;
             vertical-align: bottom;
             margin: 0 auto;
             display: inline-block;
-            height: 300px;
+            height: 233px;
             background: $color-primary;
             color: white;
             padding: 16px;
+            transition: 0.3s;
+            &:hover {
+                background: #e8ae00;
+            }
             @media screen and (max-width: 768px) {
                 padding: 8px;
-                width: 30%;
+                height: fit-content;
+                width: 100%;
+                margin-bottom: 8px;
             }
             &__icon {
                 width: 40px;
@@ -123,8 +132,11 @@
             }
             &__right {
                 display: inline-block;
-                width: 70%;
+                width: 85%;
                 vertical-align: top;
+                @media screen and (max-width: 768px) {
+                    width: 88%;
+                }
                 p,
                 h3 {
                     color: white;
